@@ -1,8 +1,8 @@
 #include <stm32f10x.h>
 
 #define LED_PIN 5
-#define LED_ON() GPIOA->BSRRL |= (1 << 5)
-#define LED_OFF() GPIOA->BSRRH |= (1 << 5)
+#define LED_ON()  do{GPIOA->BSRRL |= (1 << 5)}while(0)
+#define LED_OFF() do{GPIOA->BSRRH |= (1 << 5)}while(0)
  
 int main() {
 	/* Enbale GPIOA clock */
