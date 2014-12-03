@@ -9,11 +9,8 @@ Equipe:
 
 echanaron (?)
 
-
 rgourdel
 
-
 glebris
-
 
 tlelepvrier--cussol
