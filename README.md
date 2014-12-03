@@ -1,4 +1,10 @@
 NucleoRobotic
 =============
-Ceci est un projet que nous, les gars, bah on fait dans le cadre du cours de Embedded Systems (parsque oui, on parl anglé)
-Thomas est dans  la place !
+Projet de système embarqué de l'ENSEIRB-MATMECA, pour les élèves de 3A Robotique.
+Création d'un oscilloscope sur Nucleo F103-RB.
+
+Equipe:
+echanaron (?)
+rgourdel
+glebris
+tlelepvrier--cussol
