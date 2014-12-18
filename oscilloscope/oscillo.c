@@ -1,6 +1,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
 #include "stm32f10x_conf.h"
+#include "stm32f10x_usart.h"
 
 /* Private variables ---------------------------------------------------------*/
 GPIO_InitTypeDef GPIO_InitStructure;
@@ -19,7 +20,7 @@ void led_off();
 
 void led_switch();
 
-void Initialize_UART();
+void Initialize_USART();
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -36,7 +37,7 @@ int main(void)
 debug();
 #endif
 
-InitializeUSART();
+Initialize_USART();
 
 //RCC_Configuration();
 SystemInit();
@@ -176,7 +177,7 @@ for(; nCount != 0; nCount--);
  * Output         : None
  * Return         : None
  *******************************************************************************/
-void InitializeUSART()
+void Initialize_USART()
 {
 
 USART_InitTypeDef usartConfig;                     
