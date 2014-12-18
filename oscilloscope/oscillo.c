@@ -22,6 +22,8 @@ void led_switch();
 
 void Initialize_USART();
 
+void Initialize_ADC();
+
 /* Private functions ---------------------------------------------------------*/
 
 /*******************************************************************************
@@ -230,6 +232,25 @@ usartConfig.USART_WordLength = USART_WordLength_8b;
 }
 
 
+/*******************************************************************************
+ * Function Name  : Initialize_ADC
+ * Description    : Initialize ADC
+ * Input          : None
+ * Output         : None
+ * Return         : None
+ *******************************************************************************/
+/*
+void InitializeADC()
+{
+  // Pas bon car pas la meme lib .. bon ba aparament si ..
+  //PLL Config : PLLCLK = HSI/2 *14 = 56MHz
+  RCC->CFGR &= (uint32_t)((uint32_t)~(RCC_CFGR_PLLSRC|RCC_CFGR_PLLMULL));
+  RCC->CFGR |= (uint32_t)(RCC_CFGR_PLLSRC_HSI_Div2|RCC_CFGR_PLLMULL14);
+
+  
+}
+*/
+
 #ifdef  DEBUG
 /*******************************************************************************
  * Function Name  : assert_failed
@@ -251,3 +272,4 @@ void assert_failed(u8* file, u32 line)
     }
 }
 #endif
+
